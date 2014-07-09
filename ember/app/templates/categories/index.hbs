@@ -1,3 +1,5 @@
 {{#each}}
-  {{link-to name 'categories.show' this}}
+  {{~#link-to 'categories.show' this}}
+    {{name}} ({{posts.length}})
+  {{~/link-to}}
 {{/each}}
